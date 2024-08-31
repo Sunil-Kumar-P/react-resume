@@ -1,13 +1,19 @@
 import './App.css';
-import { Hero } from './components/Hero';
+import { useRef } from 'react';
+import Hero from './components/Hero';
 import Navbar from './components/Navbar';
-function App() {
-  return (
-    <div className='all'>
-        <Navbar/>
-        <Hero/>
-    </div>
+import { ThemeProvider } from './ThemeContext'; // Import ThemeProvider
 
+function App() {
+  const heroRef = useRef(null);
+
+  return (
+    <ThemeProvider>
+      <div className='all'>
+        <Navbar heroRef={heroRef} />
+        <Hero ref={heroRef} />
+      </div>
+    </ThemeProvider>
   );
 }
 

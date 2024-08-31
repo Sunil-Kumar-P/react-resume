@@ -1,0 +1,54 @@
+/* Hero.css */
+.hero-container {
+    text-align: center;
+    padding: 50px;
+    background: var(--hero-bg-color); /* Example using CSS variables for theming */
+    color: var(--hero-text-color);
+  }
+  
+  .hero-heading {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-subheading {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .hero-button {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: var(--button-hover-bg-color);
+    color: var(--button-hover-text-color);
+  }
+  
+  /* Example CSS Variables for Theming */
+  :root {
+    --hero-bg-color: #ECF0F1;
+    --hero-text-color: #2C3E50;
+    --button-bg-color: #3498DB;
+    --button-text-color: #FFFFFF;
+    --button-hover-bg-color: #2980B9;
+    --button-hover-text-color: #FFFFFF;
+  }
+  

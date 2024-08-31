@@ -73,16 +73,14 @@
   background-color: #34495E;
   color: #ECF0F1;
 }
-
+.dark-theme button {
+  background-color: #34495E;
+}
 /* Light Theme Toggle Button */
 .light-theme .theme-toggle-btn {
   background-color: #BDC3C7;
   color: #2C3E50;
 }
-.popup-menu  .theme-toggle-btn {
-  margin-top:20px;
-}
-
 /* Menu Icon Container */
 .menu-icon-container {
   display: none;
@@ -117,8 +115,17 @@
   text-align: center;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   animation: slide-down 0.3s ease-out;
+  align-items: center;
 }
 
+.popup-menu  .theme-toggle-btn {
+  margin-top:20px;
+}
+.popup-menu button {
+  padding-left: 40%;
+  padding-right: 40%;
+  align-self: center;
+}
 /* Light Theme Popup Menu */
 .light-theme .popup-menu {
   background: #ffffff; /* Light background color */

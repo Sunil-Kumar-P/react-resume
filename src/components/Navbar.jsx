@@ -29,9 +29,9 @@ export default function Navbar({ heroRef }) {
 
       <div className="nav-links">
         {listOfLinks.map((link, index) => (
-          <a href="#" className="nav-link" key={index} onClick={link.action}>
+          <button className="nav-link" key={index} onClick={link.action}>
             {link.name}
-          </a>
+          </button>
         ))}
         <button className="theme-toggle-btn" onClick={toggleTheme}>
           {isDarkTheme ? 'Light Theme' : 'Dark Theme'}
@@ -50,9 +50,9 @@ export default function Navbar({ heroRef }) {
         <div className="popup-overlay" onClick={togglePopup}>
           <div className="popup-menu" onClick={(e) => e.stopPropagation()}>
             {listOfLinks.map((link, index) => (
-              <a href="#" className="popup-link" key={index} onClick={link.action}>
+              <button className="popup-link" key={index} onClick={link.action}>
                 {link.name}
-              </a>
+              </button>
             ))}
             <button className="theme-toggle-btn" onClick={toggleTheme}>
               {isDarkTheme ? 'Light Theme' : 'Dark Theme'}
